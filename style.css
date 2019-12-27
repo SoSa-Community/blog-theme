@@ -1,0 +1,311 @@
+/*
+
+	Theme Name: SoSa Bootstrap
+	Theme URI: http://www.cevo.co.uk
+	Description: Wordpress theme for SoSa Blog
+	Version: 1.0
+	Author: James Mahy
+	Author URI: http://www.cevo.co.uk
+	Tags: 
+
+*/
+
+@charset "utf-8";
+@font-face {
+    font-family: 'koch_geometricregular';
+    src: url('fonts/kochgeometric_book_macroman/KochGeometric-Book-webfont.eot');
+    src: url('fonts/kochgeometric_book_macroman/KochGeometric-Book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/kochgeometric_book_macroman/KochGeometric-Book-webfont.woff2') format('woff2'),
+    url('fonts/kochgeometric_book_macroman/KochGeometric-Book-webfont.woff') format('woff'),
+    url('fonts/kochgeometric_book_macroman/KochGeometric-Book-webfont.ttf') format('truetype'),
+    url('fonts/kochgeometric_book_macroman/KochGeometric-Book-webfont.svg#koch_geometricregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'koch_geometricmedium';
+    src: url('fonts/kochgeometric_medium_macroman/KochGeometric-Medium-webfont.eot');
+    src: url('fonts/kochgeometric_medium_macroman/KochGeometric-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/kochgeometric_medium_macroman/KochGeometric-Medium-webfont.woff2') format('woff2'),
+    url('fonts/kochgeometric_medium_macroman/KochGeometric-Medium-webfont.woff') format('woff'),
+    url('fonts/kochgeometric_medium_macroman/KochGeometric-Medium-webfont.ttf') format('truetype'),
+    url('fonts/kochgeometric_medium_macroman/KochGeometric-Medium-webfont.svg#koch_geometricmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #121211;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "koch_geometricmedium", "Myriad Pro", Arial;
+
+}
+
+h1, h2, h3{
+    color:#fff;
+}
+
+#logo_main h2 {
+    font-family: "koch_geometricregular", "Myriad Pro", Arial;
+    font-size: 2.5rem;
+}
+
+img {
+    border: none;
+}
+
+#masthead ul li a{
+    text-transform: uppercase;
+}
+
+
+#masthead ul li.current-menu-item a,
+#masthead ul li a:hover {
+    color: #7ac256;
+}
+
+#masthead ul li.current-menu-item a:after,
+#masthead ul li a:hover:after {
+    opacity: 1;
+}
+
+#masthead ul li.current-menu-item a:after, #masthead ul li a:after {
+    display: block;
+    content: "";
+    background: #7ac256;
+    height: 4px;
+    opacity: 0;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+    margin-top:0.25em;
+}
+
+
+
+.post-card{
+    border:0;
+    background:none;
+    min-height: 65vh;
+}
+
+.post-card, .post-card a {
+    color: #fff;
+}
+
+.post-card .card-body{
+    background: #444442;
+    font-size: 95%;
+}
+
+.post-card .card-text-small{
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.post-block-read-more {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.paging-container .page-item.active .page-link{
+    background: #2b2b2b;
+    border-color: #2b2b2b;
+}
+
+.paging-container .page-item .page-link{
+    background: #444442;
+    border-color: #444442;
+    color:#fff;
+}
+
+#post_container, #post_container a{
+    color:#fff;
+}
+
+#post_content a{
+    color: #7ac256;
+}
+
+.post-featured-image {
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    background-image:url('images/lowdetailfaces.jpg');
+}
+
+.post-featured-image-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.post-featured-image-bottom {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.post-featured-image-title {
+    color:#fff;
+    position:relative;
+}
+.post-featured-image-details {
+    margin-top: 20px;
+    font-size: 12pt;
+    color: #FFFFFF;
+}
+.post-featured-image-details a,
+.post-featured-image-details span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#post_content {
+    background: #444442;
+}
+
+#related_posts_list {
+    list-style: none;
+    padding: 0;
+}
+
+#related_posts_list li {
+    text-align: center;
+    width:47%;
+    display:inline-block;
+    padding:1%;
+    margin:1%;
+}
+
+#related_posts_list li a {
+    display:block;
+}
+
+#related_posts_list .post-related-image{
+    height:50%;
+    width:100%;
+    overflow:hidden;
+    border-radius: 8px;
+    position:relative;
+}
+
+#related_posts_list .post-related-image img{
+    width:100%;
+}
+
+#related_posts_list .post-related-image-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#related_posts_list .post-related-image span{
+    position:absolute;
+    z-index:1;
+    bottom: 1em;
+    display:block;
+    padding:0 1em;
+}
+
+.mailpoet_submit{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.mailpoet_text{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#mailpoet_form_2 {
+    margin: 1%;
+    padding: 1%;
+}
+
+#sidebar_socialmedia_icons {
+    list-style: none;
+    margin: 1%;
+    padding: 1%;
+    padding-top: 1em;
+}
+
+#sidebar_socialmedia_icons li{
+    display:inline-block;
+    width:3em;
+}
+
+#sidebar_socialmedia_icons li:first-child{
+    width:8em;
+}
+
+#navbar_right .nav-item .nav-link i {
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.prev,
+.paging_links a[rel~="prev"] {
+    float: left;
+}
+.next,
+.paging_links a[rel~="next"] {
+    float: right;
+}
+
+#contact_form_container{
+    color:#fff;
+}
+
+#contact_form{
+    background: #444442;
+}
+
+.contact-us-form-container label{
+    text-align: left;
+}
+
+#contactform_socialmedia_icons li{
+    display:inline-block;
+    width:5em;
+}
+
+#image404 {
+    background-image: url('images/404.jpg');
+}
+
+#post_comments #post_comments_inner{
+    background-color:#fff;
+}
+
+#footer, #footer a{
+    color:#fff;
+}
+
+#footer a{
+    text-decoration: underline;
+}
