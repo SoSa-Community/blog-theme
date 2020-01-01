@@ -37,12 +37,18 @@
                             <div class="post-featured-image-bottom">
                                 <h2 class="post-featured-image-title d-none d-md-block"><?php echo get_the_title(); ?></h2>
                                 <div class="post-featured-image-details">
-                                    <div class="d-block">
-                                        <span class="dashicons dashicons-category"></span> <?php echo implode(', ',$categories); ?>
-                                    </div>
+                                    <?php if(!empty($categories)) { ?>
+                                        <div class="d-block">
+                                            <span class="dashicons dashicons-category"></span> <?php echo implode(', ',$categories); ?>
+                                        </div>
+                                    <?php } ?>
+                                    
+                                    <?php if(!empty($tags)) { ?>
                                     <div class="d-block">
                                         <span class="dashicons dashicons-tag"></span> <?php echo implode(', ',$tags); ?>
                                     </div>
+                                    <?php } ?>
+                                    
                                     <div class="d-block mt-1">
                                         <span class="dashicons dashicons-clock"></span> <span><?php echo get_the_time('F jS, Y'); ?></span>
                                     </div>
