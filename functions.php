@@ -33,6 +33,28 @@ class SoSa {
 	    add_theme_support('post-thumbnails');
 	    add_theme_support( 'title-tag' );
 	
+	    add_filter('the_content', function($content){
+		    $content = str_ireplace(
+		                                [
+		                                        'hello@socialsavanna.com',
+                                                '"hello@chatplayshare.com"',
+                                                'socialsavanna.com',
+                                                'https://chatplayshare.com',
+				                                'blog.chatplayshare.com'
+                                        ],
+                                        [
+                                                'hello@chatplayshare.com',
+                                                '"mailto:hello@chatplayshare.com"',
+                                                'sosa.net',
+                                                'https://sosa.net',
+                                                'blog.sosa.net'
+                                        ],
+                                        $content
+                    
+                    );
+		    return $content;
+	    });
+	    
 	    remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 	    add_filter('get_the_excerpt', function($text){
 		    $raw_excerpt = $text;
