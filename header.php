@@ -55,28 +55,28 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="https://facebook.com/ChatPlayShare" class="nav-link">
+                            <a href="https://facebook.com/ChatPlayShare" class="nav-link" rel="nofollow noopener">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://twitter.com/ChatPlayShare" class="nav-link">
+                            <a href="https://twitter.com/ChatPlayShare" class="nav-link" rel="nofollow noopener">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="https://youtube.com/c/sosacommunity" class="nav-link">
+                            <a href="https://youtube.com/c/sosacommunity" class="nav-link" rel="nofollow noopener">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://steamcommunity.com/groups/chatplayshare" class="nav-link">
+                            <a href="https://steamcommunity.com/groups/chatplayshare" class="nav-link" rel="nofollow noopener">
                                 <i class="fab fa-steam"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://www.linkedin.com/company/sosa-community/" class="nav-link">
+                            <a href="https://www.linkedin.com/company/sosa-community/" class="nav-link" rel="nofollow noopener">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </li>

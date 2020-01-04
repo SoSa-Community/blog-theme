@@ -34,6 +34,7 @@ class SoSa {
 	    add_theme_support( 'title-tag' );
 	
 	    add_filter('the_content', function($content){
+	     
 		    $content = str_ireplace(
 		                                [
 		                                        'hello@socialsavanna.com',
@@ -194,22 +195,22 @@ class SoSa {
             
             <?php echo $textAtStart; ?>
             <li>
-                <a href="https://www.facebook.com/ChatPlayShare/">
+                <a href="https://www.facebook.com/ChatPlayShare/" rel="nofollow noopener">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.svg" />
                 </a>
             </li>
             <li>
-                <a href="https://twitter.com/chatplayshare">
+                <a href="https://twitter.com/chatplayshare" rel="nofollow noopener">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.svg" />
                 </a>
             </li>
             <li>
-                <a href="https://youtube.com/c/sosacommunity">
+                <a href="https://youtube.com/c/sosacommunity" rel="nofollow noopener">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/yt_icon.svg" />
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/company/sosa-community/">
+                <a href="https://www.linkedin.com/company/sosa-community/" rel="nofollow noopener">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/linkedin_icon.svg" />
                 </a>
             </li>

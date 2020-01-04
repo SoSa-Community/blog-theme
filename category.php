@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+
+<?php   get_header(); ?>
 
 <div class="container-fluid mt-4">
 	<?php SoSa::showPostHandler(); ?>
