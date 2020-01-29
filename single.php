@@ -2,8 +2,8 @@
 
 
     <div id="post_container" class="row">
-        
-            <div class="col-12 col-md-8 col-lg-9">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-12 col-md-8 col-lg-7">
                 <?php
                 if(have_posts()){
                     while(have_posts()){
@@ -55,8 +55,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="post_content" class="p-3">
-                            <?php   the_content();  ?>
+                        <div id="post_content">
+                            <div class="col-12 mx-auto p-3">
+                                <?php   the_content();  ?>
+                            </div>
                         </div>
                         <?php
                         SoSa::postNav();
@@ -83,6 +85,7 @@
                     get_sidebar('left_post');
                 ?>
             </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
         
     </div>
 </div>

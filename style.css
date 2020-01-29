@@ -135,11 +135,19 @@ img {
     color:#fff;
 }
 
+#post_content {
+
+}
+
+#post_content > div {
+    background: #161512;
+}
+
 #post_content a{
     color: #7ac256;
 }
 
-#post_content figcaption, #post_content figure .wp-block-embed-youtube {
+#post_content figcaption, #post_content figure.wp-block-embed-youtube {
     text-align: center;
 }
 
@@ -154,6 +162,22 @@ img {
 #post_content ul li {
     margin: 1em 0;
 }
+
+#post_content img {
+    height:auto;
+}
+
+#post_content figure.wp-block-embed-youtube iframe {
+    width:100%;
+    height:47vw;
+}
+
+@media (min-width: 576px) {
+    #post_content figure.wp-block-embed-youtube iframe {
+        height:30vw;
+    }
+}
+
 
 .post-featured-image {
     height: 400px;
@@ -194,10 +218,6 @@ img {
 .post-featured-image-details span {
     display: inline-block;
     vertical-align: middle;
-}
-
-#post_content {
-    background: #444442;
 }
 
 #related_posts_list {
