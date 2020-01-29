@@ -11,7 +11,32 @@
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>" />
 		<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('atom_url'); ?>" />
 		
-		
+        
+        <script type="application/ld+json">
+            {
+              "@context" : "http://schema.org",
+              "@type" : "Organization",
+              "name" : "SoSa",
+              "url" : "https://blog.sosa.net",
+              "sameAs" : [
+                "https://chatplayshare.com",
+                "https://twitter.com/ChatPlayShare",
+                "https://www.instagram.com/sosacommunity/",
+                "https://www.linkedin.com/company/sosa-community/",
+                "https://steamcommunity.com/groups/SoSa-Community",
+                "https://youtube.com/c/SoSaCommunity",
+                "https://www.facebook.com/ChatPlayShare",
+                "https://play.google.com/store/apps/details?id=com.socialsavanna",
+                "https://itunes.apple.com/us/app/sosa/id1316006181?ls=1&mt=8",
+                "https://angel.co/sosa_chat_play_share/",
+                "https://www.f6s.com/sosachatplayshare",
+                "https://sosa.net/",
+                "https://www.sitejabber.com/reviews/socialsavanna.com",
+                "https://www.reddit.com/r/socialsavanna/",
+                "https://www.eventbrite.co.uk/o/sosa-29163492369"
+               ]
+            }
+        </script>
 		<?php wp_head(); ?>
 		
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
